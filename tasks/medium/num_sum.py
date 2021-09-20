@@ -11,4 +11,3 @@ def sum_of_numbers(n, summa=0):
         return summa
     else:
         return sum_of_numbers(str(n)[1:], summa + int(str(n)[0]))
-

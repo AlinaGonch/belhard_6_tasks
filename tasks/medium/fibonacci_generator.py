@@ -29,7 +29,3 @@ def fibonacci(num_count):
     for i in range(num_count):
         fib, fib2 = fib2, fib + fib2
         yield fib
-
-
-if __name__ == '__main__':
-    fibonacci(5)

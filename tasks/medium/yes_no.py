@@ -3,6 +3,7 @@
 проходит по нему и выводит Yes, если число уже встречалось и No, если нет
 """
 
+
 def yes_or_no(array):
     checked = []
     for item in array:
@@ -11,4 +12,3 @@ def yes_or_no(array):
             print('No')
         else:
             print('Yes')
-

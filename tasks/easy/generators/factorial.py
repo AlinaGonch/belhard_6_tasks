@@ -11,6 +11,7 @@ next(factorial_gen) -> 6
 next(factorial_gen) -> 24
 """
 
+
 def factorial():
     fac = 1
     i = 1
@@ -18,13 +19,3 @@ def factorial():
         fac *= i
         yield fac
         i += 1
-
-
-if __name__ == '__main__':
-    fac = factorial()
-    print(next(fac))
-    print(next(fac))
-    print(next(fac))
-    print(next(fac))
-    print(next(fac))
-

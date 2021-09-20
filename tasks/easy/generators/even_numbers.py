@@ -16,14 +16,3 @@ def get_even_number():
     while even > 0:
         yield even * 2
         even += 1
-
-
-if __name__ == '__main__':
-    ven = get_even_number()
-    print(next(ven))
-    print(next(ven))
-    print(next(ven))
-
-    print(next(ven))
-    print(next(ven))
-    print(next(ven))

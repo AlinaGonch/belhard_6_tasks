@@ -28,4 +28,3 @@ def line_print(array, spaces=0):
             line_print(el, spaces + 4)
         else:
             print(' ' * spaces + str(el))
-
