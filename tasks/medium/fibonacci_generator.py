@@ -19,16 +19,17 @@ print(next(fib))
 StopIteration
 """
 
-def fibonacci(n):
+
+def fibonacci(num_count):
     fib = 0
     fib2 = 1
-    for i in range(n):
-        fib, fib2 = fib2, fib + fib2
-        yield fib2
+    if num_count == 0:
+        raise ValueError('Введите значение больше 1')
 
-    for item in fibonacci(n):
-        print(item)
+    for i in range(num_count):
+        fib, fib2 = fib2, fib + fib2
+        yield fib
 
 
 if __name__ == '__main__':
-    fibonacci(6)
+    fibonacci(5)
