@@ -20,3 +20,11 @@ line_print(some_list)
     3
 8
 """
+
+
+def line_print(array, spaces=0):
+    for el in array:
+        if isinstance(el, list):
+            line_print(el, spaces + 4)
+        else:
+            print(' ' * spaces + str(el))
