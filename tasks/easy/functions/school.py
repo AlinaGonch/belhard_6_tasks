@@ -20,3 +20,32 @@ school_data = {
     '2a': 13,
     '2b': 30
 }
+
+
+def incr_students(data: dict, grade):
+    data[grade] += 1
+
+
+def decr_students(data: dict, grade):
+    if data[grade] > 0:
+        data[grade] -= 1
+
+
+def add_class(data: dict, grade):
+    data.setdefault(grade, 0)
+
+
+def remove_class(data: dict, grade):
+    del data[grade]
+
+
+def calc_students(data: dict):
+    summa = 0
+    for value in data.values():
+        summa += value
+    return summa
+
+
+if __name__ == '__main__':
+    incr_students(school_data, '1a')
+    print(school_data)

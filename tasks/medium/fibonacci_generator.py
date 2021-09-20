@@ -18,3 +18,17 @@ File «C:/Python/Python3/python_generator.py», line 29, in
 print(next(fib))
 StopIteration
 """
+
+def fibonacci(n):
+    fib = 0
+    fib2 = 1
+    for i in range(n):
+        fib, fib2 = fib2, fib + fib2
+        yield fib2
+
+    for item in fibonacci(n):
+        print(item)
+
+
+if __name__ == '__main__':
+    fibonacci(6)
